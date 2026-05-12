@@ -87,4 +87,4 @@ test('TC10 - Account screen rejects invalid account number updates', async ({ pa
   // Verify error and original value remains
   await expect(page.locator('[data-test="error"]')).toContainText('Invalid account number');
   await expect(page.locator('#account-number')).toContainText('123456789');  // Original value
-});
+});;;;;;;;;
