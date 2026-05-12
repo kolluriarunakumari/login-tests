@@ -1,4 +1,6 @@
-// ─── TC06: Verify account number and ID match logged-in user ──────────────────
+// ─── TC06: Verify account number and ID match logged-in
+//  user ──────────────────
+const { test, expect } = require('@playwright/test');;;;;
 test('TC06 - Account screen displays correct account number and ID for standard_user', async ({ page }) => {
   await page.goto(URL);
 
