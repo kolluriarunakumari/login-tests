@@ -1,0 +1,19 @@
+{
+  "name": "my-automation",
+  "version": "1.0.0",
+  "scripts": {
+    "test:api": "npx jest tests/api.test.js --verbose",
+    "test:login": "npx playwright test tests/login.test.js --headed",
+    "test:ui": "npx playwright test tests/ui.test.js --headed"
+  },
+  "jest": {
+    "testMatch": [
+      "**/api.test.js"
+    ]
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "axios": "^1.16.0",
+    "jest": "^30.4.2"
+  }
+}
